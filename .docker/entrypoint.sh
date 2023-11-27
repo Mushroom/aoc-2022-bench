@@ -8,7 +8,6 @@ fi
 
 if [[ -d "${1}" ]]; then
     cd ${1}
-    dotnet restore
     dotnet publish -o publish_dir -c Release
     time publish_dir/Day${1}
 fi
